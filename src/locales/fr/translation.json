@@ -22,12 +22,12 @@
   },
   "about": {
     "body": "Étudiant en double diplôme Génie électrique et Technologie informatique à uOttawa, spécialisé dans le traitement du signal, la conception d'algorithmes et l'optimisation matériel-logiciel.",
-    "pillar_1_title": "Performance",
-    "pillar_1_body": "Obsédé par les Core Web Vitals, les pipelines de rendu et chaque milliseconde qui sépare l'utilisateur du plaisir.",
-    "pillar_2_title": "Craft",
-    "pillar_2_body": "Orienté détail, de la typographie système aux courbes de timing des micro-interactions.",
-    "pillar_3_title": "Créativité",
-    "pillar_3_body": "Repousser les limites avec l'art génératif, WebGL et des médias interactifs qui surprennent."
+    "pillar_1_title": "Ingénierie",
+    "pillar_1_body": "Bâtir à l'intersection du matériel et du logiciel — traitement du signal, systèmes embarqués et algorithmes conçus pour les contraintes réelles.",
+    "pillar_2_title": "Intelligence",
+    "pillar_2_body": "Appliquer le ML là où ça compte — de la détection audio de drones en temps réel aux pipelines modernisant les systèmes de données haute tension.",
+    "pillar_3_title": "Leadership",
+    "pillar_3_body": "30+ partenaires industriels sécurisés en tant que vice-président IEEE et co-animateur d'une conférence de 300 participants réunissant étudiants et ingénieurs."
   },
   "projects": {
     "view": "Voir le projet",

@@ -22,12 +22,12 @@
   },
   "about": {
     "body": "Dual-degree Electrical Engineering & Computing Technology student at uOttawa specializing in signal processing, algorithm design, and hardware-software optimization.",
-    "pillar_1_title": "Performance",
-    "pillar_1_body": "Obsessed with Core Web Vitals, rendering pipelines, and every millisecond that stands between a user and delight.",
-    "pillar_2_title": "Craft",
-    "pillar_2_body": "Detail-driven from system typography down to micro-interaction timing curves.",
-    "pillar_3_title": "Creativity",
-    "pillar_3_body": "Pushing boundaries with generative art, WebGL, and interactive media that surprises."
+    "pillar_1_title": "Engineering",
+    "pillar_1_body": "Building where hardware meets software — signal processing, embedded systems, and algorithm design shaped by real-world constraints.",
+    "pillar_2_title": "Intelligence",
+    "pillar_2_body": "Applying ML where it counts — from real-time drone audio detection to production pipelines modernizing high-voltage data systems.",
+    "pillar_3_title": "Leadership",
+    "pillar_3_body": "Securing 30+ industry sponsors as IEEE Vice Chair and co-leading a 300-person conference that connects students with engineers."
   },
   "projects": {
     "view": "View project",
