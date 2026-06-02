@@ -1,0 +1,89 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "work": "Work",
+    "contact": "Contact"
+  },
+  "hero": {
+    "name": "Rory McCulloch",
+    "greeting": "Hello, I'm",
+    "role": "AI/ML Applied Sciences Intern",
+    "tagline": "Trench Group Ltd.",
+    "cta": "Projects",
+    "contact_cta": "Contact",
+    "scroll_hint": "Scroll to explore"
+  },
+  "sections": {
+    "about": "About",
+    "projects": "Projects",
+    "leadership": "Leadership",
+    "contact": "Contact"
+  },
+  "about": {
+    "body": "Dual-degree Electrical Engineering & Computing Technology student at uOttawa specializing in signal processing, algorithm design, and hardware-software optimization.",
+    "pillar_1_title": "Performance",
+    "pillar_1_body": "Obsessed with Core Web Vitals, rendering pipelines, and every millisecond that stands between a user and delight.",
+    "pillar_2_title": "Craft",
+    "pillar_2_body": "Detail-driven from system typography down to micro-interaction timing curves.",
+    "pillar_3_title": "Creativity",
+    "pillar_3_body": "Pushing boundaries with generative art, WebGL, and interactive media that surprises."
+  },
+  "projects": {
+    "view": "View project",
+    "featured": "Featured"
+  },
+  "leadership": {
+    "role_at": "at"
+  },
+  "contact": {
+    "heading": "Want to know more?",
+    "body": "Feel free to reach out!",
+    "email_cta": "Send an email",
+    "email_label": "Email",
+    "location_label": "Based in"
+  },
+  "language": {
+    "label": "Language",
+    "en": "English",
+    "fr": "Français",
+    "ar": "العربية"
+  },
+  "cli": {
+    "welcome": "Portfolio CLI v1.0.0  —  type 'help' to get started.",
+    "help_header": "Available commands:",
+    "cmd_ls":      "List all portfolio projects",
+    "cmd_cat":     "Display bio, contact, and leadership",
+    "cmd_help":    "Show this help text",
+    "cmd_dark":    "Switch to dark colour theme",
+    "cmd_light":   "Switch to light colour theme",
+    "cmd_lang":    "Change language: en | fr | ar",
+    "cmd_clear":   "Clear terminal output",
+    "cmd_resume":  "Open or download resume PDF",
+    "theme_set":   "Theme set to {{mode}}.",
+    "lang_set":    "LANG exported as '{{lang}}'.",
+    "lang_error":  "Unsupported locale '{{lang}}'. Supported: {{supported}}.",
+    "not_found":   "command not found: {{cmd}}",
+    "resume_opened": "Resume opened in new tab.",
+    "proj_label":  "projects/",
+    "featured":    "★ featured",
+    "leadership_header": "──── leadership ────",
+    "field_name":     "name",
+    "field_role":     "role",
+    "field_location": "location",
+    "field_email":    "email"
+  },
+  "data": {
+    "bio": "Dual-degree Electrical Engineering & Computing Technology student at uOttawa specializing in signal processing, algorithm design, and hardware-software optimization.",
+    "projects": {
+      "counter_uav":      "Real-time drone detection system by audio, achieving 70% accuracy in national defence hackathon placing 4th out of 87 teams.",
+      "weather_tracking": "Live weather tracking system for aircraft using Arduino sensors and Chart.JS visualization with Python backend.",
+      "spac":             "Organized a conference of 300+ attendees, raised thousands in sponsorship from 20+ industry partners.",
+      "trench_nova":      "ML-driven pipelines modernizing legacy data aggregation systems for high-voltage equipment."
+    },
+    "leadership": {
+      "ieee_vice-chair": { "title": "Vice Chair (formerly VP External)",  "description": "Secured 30+ industry sponsors and partners, leading outreach strategy and managing two Industry Coordinators. Organized a Ciena Networking Night connecting 200+ students with engineers. Hosted Resume Roast panel with interns from Microsoft, Tesla, Meta, AMD, Nokia, and P&G." },
+      "spac_co_lead":    { "title": "Co-Lead, SPAC", "description": "Organized a conference of 300+ attendees for networking between students and professionals. Raised thousands of dollars in sponsorship by securing 20+ industry partners. Coordinated several hands-on workshops in parallel with networking and panelist presentations." }
+    }
+  }
+}

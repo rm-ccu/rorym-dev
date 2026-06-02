@@ -1,0 +1,89 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "work": "Projets",
+    "contact": "Contact"
+  },
+  "hero": {
+    "name": "Rory McCulloch",
+    "greeting": "Bonjour, je suis",
+    "role": "Stagiaire en IA/ML Applied Sciences",
+    "tagline": "Trench Group Ltd.",
+    "cta": "Projets",
+    "contact_cta": "Contact",
+    "scroll_hint": "Défiler pour explorer"
+  },
+  "sections": {
+    "about": "À propos",
+    "projects": "Projets",
+    "leadership": "Leadership",
+    "contact": "Contact"
+  },
+  "about": {
+    "body": "Étudiant en double diplôme Génie électrique et Technologie informatique à uOttawa, spécialisé dans le traitement du signal, la conception d'algorithmes et l'optimisation matériel-logiciel.",
+    "pillar_1_title": "Performance",
+    "pillar_1_body": "Obsédé par les Core Web Vitals, les pipelines de rendu et chaque milliseconde qui sépare l'utilisateur du plaisir.",
+    "pillar_2_title": "Craft",
+    "pillar_2_body": "Orienté détail, de la typographie système aux courbes de timing des micro-interactions.",
+    "pillar_3_title": "Créativité",
+    "pillar_3_body": "Repousser les limites avec l'art génératif, WebGL et des médias interactifs qui surprennent."
+  },
+  "projects": {
+    "view": "Voir le projet",
+    "featured": "Sélectionné"
+  },
+  "leadership": {
+    "role_at": "chez"
+  },
+  "contact": {
+    "heading": "Vous en voulez plus ?",
+    "body": "N'hésitez pas à me contacter !",
+    "email_cta": "Envoyer un e-mail",
+    "email_label": "E-mail",
+    "location_label": "Basé à"
+  },
+  "language": {
+    "label": "Langue",
+    "en": "English",
+    "fr": "Français",
+    "ar": "العربية"
+  },
+  "cli": {
+    "welcome": "Portfolio CLI v1.0.0  —  tapez 'help' pour commencer.",
+    "help_header": "Commandes disponibles :",
+    "cmd_ls":      "Lister tous les projets du portfolio",
+    "cmd_cat":     "Afficher la bio, le contact et la direction",
+    "cmd_help":    "Afficher ce texte d'aide",
+    "cmd_dark":    "Passer au thème sombre",
+    "cmd_light":   "Passer au thème clair",
+    "cmd_lang":    "Changer de langue : en | fr | ar",
+    "cmd_clear":   "Effacer la sortie du terminal",
+    "cmd_resume":  "Ouvrir ou télécharger le PDF de CV",
+    "theme_set":   "Thème réglé sur {{mode}}.",
+    "lang_set":    "LANG défini sur '{{lang}}'.",
+    "lang_error":  "Locale '{{lang}}' non supportée. Supportées : {{supported}}.",
+    "not_found":   "commande introuvable : {{cmd}}",
+    "resume_opened": "CV ouvert dans un nouvel onglet.",
+    "proj_label":  "projets/",
+    "featured":    "★ sélectionné",
+    "leadership_header": "──── direction ────",
+    "field_name":     "nom",
+    "field_role":     "rôle",
+    "field_location": "lieu",
+    "field_email":    "e-mail"
+  },
+  "data": {
+    "bio": "Étudiant en double diplôme Génie électrique et Technologie informatique à uOttawa, spécialisé dans le traitement du signal, la conception d'algorithmes et l'optimisation matériel-logiciel.",
+    "projects": {
+      "counter_uav":      "Système de détection de drones en temps réel par audio, atteignant 70% de précision lors d'un hackathon national de défense se classant 4e sur 87 équipes.",
+      "weather_tracking": "Système de suivi météorologique en direct pour les aéronefs utilisant des capteurs Arduino et la visualisation Chart.JS avec backend Python.",
+      "spac":             "Organisation d'une conférence de 300+ participants, levée de milliers de dollars en parrainage auprès de 20+ partenaires industriels.",
+      "trench_nova":      "Pipelines ML modernisant les systèmes hérités d'agrégation de données pour les équipements haute tension."
+    },
+    "leadership": {
+      "ieee_vice-chair": { "title": "Vice-Président (anciennement VP Externe)",  "description": "Sécurisé 30+ sponsors et partenaires industriels, direction de la stratégie de sensibilisation et gestion de deux coordinateurs industriels. Organisation d'une Ciena Networking Night réunissant 200+ étudiants et ingénieurs. Animé un panel Resume Roast avec des stagiaires de Microsoft, Tesla, Meta, AMD, Nokia et P&G." },
+      "spac_co_lead":    { "title": "Co-animateur, SPAC", "description": "Organisation d'une conférence de 300+ participants pour le réseautage entre étudiants et professionnels. Levée de milliers de dollars en parrainage en sécurisant 20+ partenaires industriels. Coordination de plusieurs ateliers pratiques en parallèle avec le réseautage et les présentations des panélistes." }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "meta": {
+    "name": "Rory McCulloch",
+    "location": "Ottawa, ON",
+    "email": "rory.mccu@gmail.com"
+  },
+  "projects": [
+    { "id": "counter_uav",  "name": "Counter-UAV System",                      "tech": ["Audio Classification", "Signal Processing", "Convolutional Neural Networks"], "url": "#", "year": 2025, "featured": true  },
+    { "id": "weather_tracking", "name": "Live Weather Tracking System for Aircraft", "tech": ["Arduino", "Chart.JS", "Python"],           "url": "https://github.com/aerotemp", "year": 2025, "featured": true  },
+    { "id": "spac",        "name": "Student Professional Awareness Conference", "tech": ["Event Coordination", "Sponsorship Management"], "url": "#", "year": 2025, "featured": false },
+    { "id": "trench_nova", "name": "Project NOVA",                            "tech": ["PyTorch", "ML Pipeline", "Data Aggregation"], "url": "#", "year": 2026, "featured": false }
+  ],
+  "leadership": [
+    { "id": "ieee_vice-chair", "org": "IEEE uOttawa Student Branch", "period": "Sep. '24 – Present" },
+    { "id": "spac_co_lead",    "org": "Student Professional Awareness Conference (SPAC)", "period": "Oct. '25" }
+  ]
+}

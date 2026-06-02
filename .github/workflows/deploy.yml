@@ -1,0 +1,102 @@
+# Deploy to GitHub Pages on every push to main.
+# Uses the official actions/deploy-pages action (no third-party uploader).
+#
+# Prerequisites (do these once in GitHub UI before the first push):
+#   1. Repository → Settings → Pages → Source: "GitHub Actions"
+#   2. Repository → Settings → Pages → Custom domain: your-domain.com
+#      (GitHub will also commit a CNAME file — you already have one in public/)
+#   3. In your DNS (Cloudflare or Namecheap), add the records listed at the
+#      bottom of this file before the custom domain is verified.
+
+name: Build & Deploy
+
+on:
+  push:
+    branches: [main]
+  # Allow a manual re-deploy from the Actions tab without a code push.
+  workflow_dispatch:
+
+# Required by actions/deploy-pages.
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Cancel any in-progress deploy when a new push arrives, so you never
+# serve a stale build while a newer one is already building.
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+        # Vite writes output to ./dist by default.
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Upload the entire dist/ folder as the Pages artifact.
+          path: ./dist
+
+  deploy:
+    name: Deploy
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      # The url is surfaced in the GitHub UI under Deployments.
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deploy
+        uses: actions/deploy-pages@v4
+
+# ---------------------------------------------------------------------------
+# DNS records (set these in Cloudflare or Namecheap before enabling the
+# custom domain in GitHub Pages settings).
+#
+# Option A — apex domain only (e.g. example.com)
+#   Type    Name    Value
+#   A       @       185.199.108.153
+#   A       @       185.199.109.153
+#   A       @       185.199.110.153
+#   A       @       185.199.111.153
+#   AAAA    @       2606:50c0:8000::153
+#   AAAA    @       2606:50c0:8001::153
+#   AAAA    @       2606:50c0:8002::153
+#   AAAA    @       2606:50c0:8003::153
+#
+# Option B — www subdomain only (e.g. www.example.com)
+#   Type    Name    Value
+#   CNAME   www     <your-github-username>.github.io
+#
+# Option C — apex + www redirect (recommended)
+#   Add all A/AAAA records from Option A, then add the CNAME from Option B.
+#   GitHub Pages will redirect www → apex (or apex → www, depending on which
+#   you set as the canonical domain in Pages settings).
+#
+# Cloudflare-specific note:
+#   Set the proxy status to DNS Only (grey cloud) for the A/AAAA records.
+#   GitHub needs to see the bare IP to issue the TLS certificate via Let's
+#   Encrypt. After the cert is provisioned (a few minutes) you can optionally
+#   re-enable the Cloudflare proxy — but "Full (strict)" SSL mode must be off
+#   because GitHub Pages uses its own cert, not an origin cert.
+#   The safest choice is to leave it DNS Only and let GitHub handle HTTPS.
+# ---------------------------------------------------------------------------
