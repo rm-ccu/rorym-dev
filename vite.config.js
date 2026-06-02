@@ -15,10 +15,11 @@ export default defineConfig({
     // keep vendor separate from app code so returning visitors only re-download changed chunks.
     rollupOptions: {
       output: {
-        manualChunks: {
-          vendor: ['react', 'react-dom'],
-          motion: ['framer-motion'],
-          i18n:   ['i18next', 'react-i18next'],
+        manualChunks(id) {
+          if (!id.includes('node_modules')) return
+          if (id.includes('react-dom') || id.includes('react/')) return 'vendor'
+          if (id.includes('framer-motion')) return 'motion'
+          if (id.includes('i18next')) return 'i18n'
         },
       },
     },
