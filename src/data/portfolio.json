@@ -4,6 +4,10 @@
     "location": "Ottawa, ON",
     "email": "rory.mccu@gmail.com"
   },
+  "experience": [
+    { "id": "trench",      "company": "Trench Group – Project NOVA", "period": "May '26 – Oct. '26", "logoStyle": "cover",   "url": "https://trench-group.com/trench-canada/", "tech": ["Azure OpenAI", "spaCy", "Python"] },
+    { "id": "aim_colours", "company": "Aim Colours",                 "period": "May '25 – Sep. '25", "logoStyle": "contain", "url": "https://www.aimcolours.com/", "tech": ["KiCad", "Altium", "Embedded Programming"] }
+  ],
   "projects": [
     { "id": "counter_uav",  "name": "Counter-UAV System",                      "tech": ["Audio Classification", "Signal Processing", "Convolutional Neural Networks"], "url": "#", "year": 2025, "featured": true  },
     { "id": "weather_tracking", "name": "Live Weather Tracking System for Aircraft", "tech": ["Arduino", "Chart.JS", "Python"],           "url": "https://github.com/aerotemp", "year": 2025, "featured": true  },

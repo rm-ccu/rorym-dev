@@ -77,7 +77,7 @@ export default function Projects() {
       viewport={{ once: true, margin: '-80px' }}
     >
       <motion.div variants={fadeUp}>
-        <SectionHeading index="02" label={t('sections.projects')} />
+        <SectionHeading index="03" label={t('sections.projects')} />
       </motion.div>
 
       <motion.div

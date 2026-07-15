@@ -11,11 +11,13 @@
     "role": "AI/ML Applied Sciences Intern",
     "tagline": "Trench Group Ltd.",
     "cta": "Projects",
+    "experience_cta": "Experience",
     "contact_cta": "Contact",
     "scroll_hint": "Scroll to explore"
   },
   "sections": {
     "about": "About",
+    "experience": "Experience",
     "projects": "Projects",
     "leadership": "Leadership",
     "contact": "Contact"
@@ -75,6 +77,10 @@
   },
   "data": {
     "bio": "Dual-degree Electrical Engineering & Computing Technology student at uOttawa specializing in signal processing, algorithm design, and hardware-software optimization.",
+    "experience": {
+      "trench":      { "role": "AI/ML Applied Sciences Intern" },
+      "aim_colours": { "role": "Electrical Engineering Intern" }
+    },
     "projects": {
       "counter_uav":      "Real-time drone detection system by audio, achieving 70% accuracy in national defence hackathon placing 4th out of 87 teams.",
       "weather_tracking": "Live weather tracking system for aircraft using Arduino sensors and Chart.JS visualization with Python backend.",

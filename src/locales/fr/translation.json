@@ -11,11 +11,13 @@
     "role": "Stagiaire en IA/ML Applied Sciences",
     "tagline": "Trench Group Ltd.",
     "cta": "Projets",
+    "experience_cta": "Expérience",
     "contact_cta": "Contact",
     "scroll_hint": "Défiler pour explorer"
   },
   "sections": {
     "about": "À propos",
+    "experience": "Expérience",
     "projects": "Projets",
     "leadership": "Leadership",
     "contact": "Contact"
@@ -75,6 +77,10 @@
   },
   "data": {
     "bio": "Étudiant en double diplôme Génie électrique et Technologie informatique à uOttawa, spécialisé dans le traitement du signal, la conception d'algorithmes et l'optimisation matériel-logiciel.",
+    "experience": {
+      "trench":      { "role": "Stagiaire en IA/ML Applied Sciences" },
+      "aim_colours": { "role": "Stagiaire en génie électrique" }
+    },
     "projects": {
       "counter_uav":      "Système de détection de drones en temps réel par audio, atteignant 70% de précision lors d'un hackathon national de défense se classant 4e sur 87 équipes.",
       "weather_tracking": "Système de suivi météorologique en direct pour les aéronefs utilisant des capteurs Arduino et la visualisation Chart.JS avec backend Python.",

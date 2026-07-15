@@ -44,7 +44,7 @@ export default function Leadership() {
       viewport={{ once: true, margin: '-80px' }}
     >
       <motion.div variants={fadeUp}>
-        <SectionHeading index="03" label={t('sections.leadership')} />
+        <SectionHeading index="04" label={t('sections.leadership')} />
       </motion.div>
 
       <motion.div className="mt-10 flex flex-col gap-8" variants={stagger}>

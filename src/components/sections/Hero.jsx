@@ -75,6 +75,15 @@ export default function Hero() {
 
         <motion.div {...item(0.45)} className="flex gap-3 mt-2 flex-wrap justify-center">
           <a
+            href="#experience"
+            className="px-6 py-2.5 rounded-full border border-(--border)
+                       text-(--text) font-medium
+                       hover:border-(--accent) hover:text-(--accent)
+                       transition-colors"
+          >
+            {t('hero.experience_cta')}
+          </a>
+          <a
             href="#work"
             className="px-6 py-2.5 rounded-full border border-(--border)
                        text-(--text) font-medium
