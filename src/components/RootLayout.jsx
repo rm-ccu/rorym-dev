@@ -5,6 +5,7 @@ import GuiPane from './GuiPane'
 import CLI from './CLI'
 import ThemeToggle from './ThemeToggle'
 import ScrollToTop from './ScrollToTop'
+import SocialLinks from './SocialLinks'
 import Clock from './Clock'
 import ResumeButtons from './ResumeButtons'
 
@@ -46,6 +47,7 @@ export default function RootLayout() {
     <>
       <CanvasBG />
       <ScrollToTop />
+      <SocialLinks />
 
       {/* z-10 creates a stacking context above the fixed canvas */}
       <div
