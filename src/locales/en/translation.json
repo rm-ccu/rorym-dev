@@ -84,7 +84,7 @@
     "projects": {
       "counter_uav":      "Real-time drone detection system by audio, achieving 70% accuracy in national defence hackathon placing 4th out of 87 teams.",
       "weather_tracking": "Live weather tracking system for aircraft using Arduino sensors and Chart.JS visualization with Python backend.",
-      "spac":             "Organized a conference of 300+ attendees, raised thousands in sponsorship from 20+ industry partners.",
+      "uottarun":         "Website for uOttawa's official running club — built with Next.js and TypeScript, featuring custom EN/FR i18n and deployed on Vercel.",
       "trench_nova":      "ML-driven pipelines modernizing legacy data aggregation systems for high-voltage equipment."
     },
     "leadership": {
