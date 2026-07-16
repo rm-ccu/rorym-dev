@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 export default function ResumeButtons() {
   return (
     <motion.a
-      href="/resume.pdf"
+      href="/Rory_McCulloch_Resume_2026.pdf"
       target="_blank"
       rel="noopener noreferrer"
       whileTap={{ scale: 0.95 }}
