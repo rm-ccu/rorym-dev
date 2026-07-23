@@ -15,7 +15,8 @@
     { "id": "weather_tracking", "name": "Live Weather Tracking System for Aircraft", "tech": ["Arduino", "Chart.JS", "Python"],           "url": "https://github.com/aerotemp", "year": 2025, "featured": false }
   ],
   "leadership": [
-    { "id": "ieee_vice-chair", "org": "IEEE uOttawa Student Branch", "period": "Sep. '24 – Present" },
-    { "id": "spac_co_lead",    "org": "Student Professional Awareness Conference (SPAC)", "period": "Oct. '25" }
+    { "id": "ieee_vice-chair",     "org": "IEEE uOttawa Student Branch", "url": "https://ieeeuottawa.ca", "period": "Sep. '24 – Present", "colors": ["#00629B", "#00B5E2"] },
+    { "id": "uottarun_co_president", "org": "uOttaRun Running Club", "url": "https://uoc-uor.ca", "period": "Sep. '24 – Present", "colors": ["#9ABD74", "#6FA84A", "#215D7A", "#FFCE00"] },
+    { "id": "spac_co_lead",    "org": "Student Professional Awareness Conference (SPAC)", "url": "https://ieeespac.ca", "period": "Oct. '25", "colors": ["#00A4E0", "#FF2E92", "#FFDD00", "#FF3B3B"], "vibrant": true }
   ]
 }

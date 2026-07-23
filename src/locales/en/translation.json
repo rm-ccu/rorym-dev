@@ -89,6 +89,7 @@
     },
     "leadership": {
       "ieee_vice-chair": { "title": "Vice Chair (formerly VP External)",  "description": "Secured 30+ industry sponsors and partners, leading outreach strategy and managing two Industry Coordinators. Organized a Ciena Networking Night connecting 200+ students with engineers. Hosted Resume Roast panel with interns from Microsoft, Tesla, Meta, AMD, Nokia, and P&G." },
+      "uottarun_co_president": { "title": "Co-President (formerly Admin, Jr. Admin)", "description": "Managed 30+ pacers across 11 pacing groups in 30-second increments (4:30–8:00/km) for 100+ runners per session and 600+ total members. Created 50+ routes for 2 weekly runs and 12 annual events, coordinating logistics across Strava, WhatsApp, and a pacer master spreadsheet alongside the Comms and Events teams. Mentored a Jr. Admin while serving as Admin." },
       "spac_co_lead":    { "title": "Co-Lead, SPAC", "description": "Organized a conference of 300+ attendees for networking between students and professionals. Raised thousands of dollars in sponsorship by securing 20+ industry partners. Coordinated several hands-on workshops in parallel with networking and panelist presentations." }
     }
   }

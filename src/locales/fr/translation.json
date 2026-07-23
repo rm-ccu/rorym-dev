@@ -89,6 +89,7 @@
     },
     "leadership": {
       "ieee_vice-chair": { "title": "Vice-Président (anciennement VP Externe)",  "description": "Sécurisé 30+ sponsors et partenaires industriels, direction de la stratégie de sensibilisation et gestion de deux coordinateurs industriels. Organisation d'une Ciena Networking Night réunissant 200+ étudiants et ingénieurs. Animé un panel Resume Roast avec des stagiaires de Microsoft, Tesla, Meta, AMD, Nokia et P&G." },
+      "uottarun_co_president": { "title": "Co-Président (anciennement Admin, Jr. Admin)", "description": "Géré 30+ meneurs d'allure répartis en 11 groupes de rythme par tranches de 30 secondes (4:30–8:00/km) pour 100+ coureurs par séance et 600+ membres au total. Créé 50+ parcours pour 2 sorties hebdomadaires et 12 événements annuels, en coordonnant la logistique via Strava, WhatsApp et un tableur maître des meneurs d'allure avec les équipes Communications et Événements. Encadré un Jr. Admin durant mon mandat d'Admin." },
       "spac_co_lead":    { "title": "Co-animateur, SPAC", "description": "Organisation d'une conférence de 300+ participants pour le réseautage entre étudiants et professionnels. Levée de milliers de dollars en parrainage en sécurisant 20+ partenaires industriels. Coordination de plusieurs ateliers pratiques en parallèle avec le réseautage et les présentations des panélistes." }
     }
   }
