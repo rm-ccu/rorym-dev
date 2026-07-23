@@ -3,18 +3,56 @@ import { useTranslation } from 'react-i18next'
 import portfolio from '../../data/portfolio.json'
 import { fadeUp, section, stagger } from '../../lib/animations'
 import { SectionHeading } from './About'
+import counterUavGif from '../../assets/projects/counter-uav.gif'
+import handsUpGif from '../../assets/projects/hands-up.gif'
+
+const PROJECT_GIFS = {
+  counter_uav: counterUavGif,
+  hands_up: handsUpGif,
+}
 
 function ProjectCard({ project }) {
   const { t } = useTranslation()
+  const gif = PROJECT_GIFS[project.id]
+
+  const titleClass = gif
+    ? 'text-white group-hover:text-[var(--text-h)]'
+    : 'text-[var(--text-h)]'
+  const tagClass = gif
+    ? 'border-white/30 text-white/90 group-hover:border-[var(--border)] group-hover:text-[var(--text)]'
+    : 'border-[var(--border)] text-[var(--text)]'
+  const footerBorderClass = gif
+    ? 'border-white/20 group-hover:border-[var(--border)]'
+    : 'border-[var(--border)]'
+  const yearClass = gif
+    ? 'text-white/60 group-hover:text-[var(--text)] group-hover:opacity-50'
+    : 'text-[var(--text)] opacity-50'
 
   return (
     <motion.article
       variants={fadeUp}
-      className="flex flex-col gap-4 rounded-xl border border-[var(--border)] p-6
-                 hover:border-[var(--accent-border)] transition-colors group"
+      className="relative flex flex-col gap-4 rounded-xl border border-[var(--border)] p-6
+                 overflow-hidden hover:border-[var(--accent-border)] transition-colors group"
     >
-      <div className="flex items-start justify-between gap-2">
-        <h3 className="text-[var(--text-h)] font-semibold text-lg leading-snug">
+      {gif && (
+        <>
+          <div className="absolute inset-0 bg-[#0a1237]" />
+          <img
+            src={gif}
+            alt=""
+            aria-hidden="true"
+            className="absolute inset-0 h-full w-full object-contain object-bottom
+                       mask-[linear-gradient(to_bottom,transparent,black_45%)]"
+          />
+          <div
+            className="absolute inset-0 bg-black/40 group-hover:bg-[var(--bg)]
+                       transition-colors duration-500"
+          />
+        </>
+      )}
+
+      <div className="relative flex items-start justify-between gap-2">
+        <h3 className={`font-semibold text-lg leading-snug transition-colors duration-500 ${titleClass}`}>
           {project.name}
         </h3>
         {project.featured && (
@@ -27,16 +65,19 @@ function ProjectCard({ project }) {
         )}
       </div>
 
-      <p className="text-[var(--text)] text-sm leading-relaxed flex-1">
+      <p
+        className={`relative text-[var(--text)] text-sm leading-relaxed flex-1 ${
+          gif ? 'opacity-0 group-hover:opacity-100 transition-opacity duration-500' : ''
+        }`}
+      >
         {t(`data.projects.${project.id}`)}
       </p>
 
-      <div className="flex flex-wrap gap-2">
+      <div className="relative flex flex-wrap gap-2">
         {project.tech.map((tag) => (
           <span
             key={tag}
-            className="text-xs px-2.5 py-0.5 rounded-full
-                       border border-[var(--border)] text-[var(--text)]"
+            className={`text-xs px-2.5 py-0.5 rounded-full border transition-colors duration-500 ${tagClass}`}
           >
             {tag}
           </span>
@@ -44,10 +85,10 @@ function ProjectCard({ project }) {
       </div>
 
       <div
-        className="flex items-center justify-between text-xs pt-1
-                   border-t border-[var(--border)]"
+        className={`relative flex items-center justify-between text-xs pt-1
+                     border-t transition-colors duration-500 ${footerBorderClass}`}
       >
-        <span className="text-[var(--text)] opacity-50 font-mono">{project.year}</span>
+        <span className={`font-mono transition-colors duration-500 ${yearClass}`}>{project.year}</span>
         {project.url && project.url !== '#' && (
           <a
             href={project.url}
