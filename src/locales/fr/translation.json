@@ -85,7 +85,7 @@
       "counter_uav":      "Système de détection de drones en temps réel par audio, atteignant 70% de précision lors d'un hackathon national de défense se classant 4e sur 87 équipes.",
       "weather_tracking": "Système de suivi météorologique en direct pour les aéronefs utilisant des capteurs Arduino et la visualisation Chart.JS avec backend Python.",
       "uottarun":         "Site web du club de course officiel de l'Université d'Ottawa — conçu avec Next.js et TypeScript, avec i18n personnalisé EN/FR, déployé sur Vercel.",
-      "trench_nova":      "Pipelines ML modernisant les systèmes hérités d'agrégation de données pour les équipements haute tension."
+      "hands_up":         "Classificateur de gestes pierre-papier-ciseaux utilisant un microcontrôleur STM32 Nucleo, un capteur de profondeur à temps de vol VL53L8CX et un réseau de neurones PyTorch pour l'inférence en temps réel."
     },
     "leadership": {
       "ieee_vice-chair": { "title": "Vice-Président (anciennement VP Externe)",  "description": "Sécurisé 30+ sponsors et partenaires industriels, direction de la stratégie de sensibilisation et gestion de deux coordinateurs industriels. Organisation d'une Ciena Networking Night réunissant 200+ étudiants et ingénieurs. Animé un panel Resume Roast avec des stagiaires de Microsoft, Tesla, Meta, AMD, Nokia et P&G." },

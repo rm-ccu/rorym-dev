@@ -10,9 +10,9 @@
   ],
   "projects": [
     { "id": "counter_uav",  "name": "Counter-UAV System",                      "tech": ["Audio Classification", "Signal Processing", "Convolutional Neural Networks"], "url": "#", "year": 2025, "featured": true  },
-    { "id": "weather_tracking", "name": "Live Weather Tracking System for Aircraft", "tech": ["Arduino", "Chart.JS", "Python"],           "url": "https://github.com/aerotemp", "year": 2025, "featured": true  },
+    { "id": "hands_up",    "name": "Hands-Up Gesture Recognition System",     "tech": ["STM32", "PyTorch", "Time-of-Flight Sensing"], "url": "https://github.com/rm-ccu/hands-up", "year": 2026, "featured": true  },
     { "id": "uottarun",    "name": "uOttaRun Club Website", "tech": ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"], "url": "https://github.com/rm-ccu/uottarun", "year": 2026, "featured": false },
-    { "id": "trench_nova", "name": "Project NOVA",                            "tech": ["PyTorch", "ML Pipeline", "Data Aggregation"], "url": "#", "year": 2026, "featured": false }
+    { "id": "weather_tracking", "name": "Live Weather Tracking System for Aircraft", "tech": ["Arduino", "Chart.JS", "Python"],           "url": "https://github.com/aerotemp", "year": 2025, "featured": false }
   ],
   "leadership": [
     { "id": "ieee_vice-chair", "org": "IEEE uOttawa Student Branch", "period": "Sep. '24 – Present" },
