@@ -86,6 +86,16 @@ export function Result({ result }) {
               </p>
               <p className="text-[var(--text)] text-sm">{item.description}</p>
               <p className="text-xs opacity-60 text-[var(--accent)]">{item.tech.join('  ·  ')}</p>
+              {item.url && (
+                <a
+                  href={item.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-xs text-[var(--accent)] hover:underline w-fit"
+                >
+                  {item.viewLabel} <span aria-hidden className="rtl-flip">→</span>
+                </a>
+              )}
             </div>
           ))}
         </div>

@@ -52,6 +52,8 @@ export function useCommandParser() {
             tech:         p.tech,
             featured:     p.featured,
             featuredLabel: p.featured ? t('cli.featured') : null,
+            url:          p.url && p.url !== '#' ? p.url : null,
+            viewLabel:    t('projects.view'),
           })),
         }
 
@@ -77,7 +79,7 @@ export function useCommandParser() {
         }
 
       } else if (input === 'resume') {
-        window.open('/resume.pdf', '_blank')
+        window.open('/Rory_McCulloch_Resume.pdf', '_blank')
         result = { type: 'success', message: t('cli.resume_opened') }
 
       } else if (/^theme\s+--?(dark|light)$/.test(input)) {
